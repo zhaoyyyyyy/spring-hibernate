@@ -345,7 +345,7 @@
 			</tr>
 			<tr>
 				<td align="center">类型</td>
-				<td><input type="text" name="watchType"></td>
+				<td><input type="text" name="watchType.typeId"></td>
 				<%-- <td>
 					<c:forEach items="${typeList}" var="type">
 						<c:if test="${book.bookType.typeId==type.typeId}">

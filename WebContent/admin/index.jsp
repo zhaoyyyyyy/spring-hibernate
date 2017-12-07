@@ -234,8 +234,6 @@
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu extended logout">
-                <li><a href="#"><i class=" fa fa-suitcase"></i>查看</a></li>
-                <li><a href="#"><i class="fa fa-cog"></i>设置</a></li>
                 <li><a href="login.jsp"><i class="fa fa-key"></i> 退出 Out</a></li>
             </ul>
         </li>
@@ -301,12 +299,12 @@
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-glass"></i>
-                        <span>图书管理</span>
+                        <span>手表管理</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="../getBooks.do">图书列表</a></li>
-                        <li><a href="../getBookTypes.do">添加图书</a></li>
-                        <li><a href="addBookType.jsp">添加图书类型</a></li>
+                        <li><a href="../getBooks.do">手表列表</a></li>
+                        <li><a href="../getBookTypes.do">添加手表</a></li>
+                        <li><a href="addWatchType.jsp">添加手表类型</a></li>
                     </ul>
                 </li>
                 <li  class="sub-menu">

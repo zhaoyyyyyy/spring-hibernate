@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Checkout</title>
+<title>Register</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!--jQuery(necessary for Bootstrap's JavaScript plugins)-->
 <script src="js/jquery-1.11.0.min.js"></script>
-<!--Custom-Theme-files-->
+<!--Custom Theme files-->
 <!--theme-style-->
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
 <!--//theme-style-->
@@ -13,7 +13,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Luxury Watches Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
-<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>	
 <!--start-menu-->
 <script src="js/simpleCart.min.js"> </script>
 <link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
@@ -228,92 +228,110 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<div class="breadcrumbs-main">
 				<ol class="breadcrumb">
-					<li><a href="index.html">首页</a></li>
-					<li class="active">支付</li>
+					<li><a href="index.html">主页</a></li>
+					<li class="active">注册</li>
 				</ol>
 			</div>
 		</div>
 	</div>
 	<!--end-breadcrumbs-->
-	<!--start-ckeckout-->
-	<div class="ckeckout">
+	<!--register-starts-->
+	<div class="register">
 		<div class="container">
-			<div class="ckeck-top heading">
-				<h2>支付</h2>
+			<div class="register-top heading">
+				<h2>注册账户</h2>
 			</div>
-			<div class="ckeckout-top">
-			<div class="cart-items">
-			 <h3>购物车</h3>
-				<script>$(document).ready(function(c) {
-					$('.close1').on('click', function(c){
-						$('.cart-header').fadeOut('slow', function(c){
-							$('.cart-header').remove();
-						});
-						});	  
-					});
-			   </script>
-			<script>$(document).ready(function(c) {
-					$('.close2').on('click', function(c){
-						$('.cart-header1').fadeOut('slow', function(c){
-							$('.cart-header1').remove();
-						});
-						});	  
-					});
-			   </script>
-			   <script>$(document).ready(function(c) {
-					$('.close3').on('click', function(c){
-						$('.cart-header2').fadeOut('slow', function(c){
-							$('.cart-header2').remove();
-						});
-						});	  
-					});
-			   </script>
+			<div class="register-main">
+				<div class="col-md-6 account-left">
 				
-			<div class="in-check" >
-				<ul class="unit">
-					<li><span>产品</span></li>
-					<li><span>产品名称</span></li>		
-					<li><span>价格</span></li>
-					<li><span>支付细节</span></li>
-					<li> </li>
-					<div class="clearfix"> </div>
-				</ul>
-				<ul class="cart-header">
-					<div class="close1"> </div>
-						<li class="ring-in"><a href="single.html" ><img src="images/c-1.jpg" class="img-responsive" alt=""></a>
-						</li>
-						<li><span class="name">电子表</span></li>
-						<li><span class="cost">价格：150元</span></li>
-						<li><span>包邮</span>
-						<p>快递2-3天即可到达</p></li>
-					<div class="clearfix"> </div>
-				</ul>
-				<ul class=" cart-header1">
-					<div class="close2"> </div>
-						<li class="ring-in"><a href="single.html" ><img src="images/c-2.jpg" class="img-responsive" alt=""></a>
-						</li>
-						<li><span class="name">电子表</span></li>
-						<li><span class="cost">价格：150元</span></li>
-						<li><span>包邮</span>
-						<p>快递2-3天即可到达</p></li>
-						<div class="clearfix"> </div>
-				</ul>
-				<ul class="cart-header2">
-					<div class="close3"> </div>
-						<li class="ring-in"><a href="single.html" ><img src="images/c-3.jpg" class="img-responsive" alt=""></a>
-						</li>
-						<li><span class="name">电子表</span></li>
-						<li><span class="cost">价格：150元</span></li>
-						<li><span>包邮</span>
-						<p>快递2-3天即可到达</p></li>
-						<div class="clearfix"> </div>
-				</ul>
+		<form action="../regist.do"  method="post">
+		<table>
+			<tr>
+				<td>
+				<h1>注册</h1>
+				<td>
+			</tr>
+			<tr>
+				<td>
+				登录名：
+				</td>
+				<td>
+				<input type="text" name="loginName"  value=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				真实姓名：
+				</td>
+				<td>
+				<input type="text" name="realName"  value=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				性别：
+				</td>
+				<td>
+				<input type="text" name="sex"  value=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				年龄：
+				</td>
+				<td>
+				<input type="text" name="age"  value=""/>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				密码：
+				</td>
+				<td>
+				<input type="password" name="password1" value="" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				再次输入密码：
+				</td>
+				<td>
+				<input type="password" name="password2" value="" />
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<input type="submit" value="注册"/>
+				</td>
+			</tr>
+			</table>
+		</form>
+				<form action="login.jsp">
+				<input type="submit" value="返回登陆">
+				</form>
+				
+					<!-- <input placeholder="名字" type="text" tabindex="1" required>
+						<input placeholder="姓" type="text" tabindex="2" required>
+						<input placeholder="邮箱地址" type="text" tabindex="3" required>
+						<input placeholder="移动电话" type="text" tabindex="3" required>
+						<ul>
+							<li><label class="radio left"><input type="radio" name="radio" checked=""><i></i>男性</label></li>
+							<li><label class="radio"><input type="radio" name="radio"><i></i>女士</label></li>
+							<div class="clearfix"></div>
+						</ul>
+				</div>
+				<div class="col-md-6 account-left">
+					<input placeholder="密码" type="password" tabindex="4" required>
+						<input placeholder="输入确认密码" type="password" tabindex="4" required>
+				</div> -->
+				<div class="clearfix"></div>
 			</div>
-			</div>  
-		 </div>
+			<div class="address submit">
+							<input type="submit" value="提交">
+						</div>
 		</div>
 	</div>
-	<!--end-ckeckout-->
+	<!--register-end-->
 	<!--information-starts-->
 	<div class="information">
 		<div class="container">
@@ -329,13 +347,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="col-md-3 infor-left">
 					<h3>信息</h3>
 					<ul>
+						<li><a href="#"><p>特色</p></a></li>
+						<li><a href="#"><p>特色</p></a></li>
+						<li><a href="#"><p>特色</p></a></li>
 						<li><a href="contact.html"><p>特色</p></a></li>
+						<li><a href="#"><p>特色</p></a></li>
 					</ul>
 				</div>
 				<div class="col-md-3 infor-left">
 					<h3>我的账户</h3>
 					<ul>
 						<li><a href="account.html"><p>我的账户</p></a></li>
+						<li><a href="#"><p>我的信用记录</p></a></li>
+						<li><a href="#"><p>我的商品</p></a></li>
+						<li><a href="#"><p>我的商品</p></a></li>
+						<li><a href="#"><p>我的商品</p></a></li>
 					</ul>
 				</div>
 				<div class="clearfix"></div>

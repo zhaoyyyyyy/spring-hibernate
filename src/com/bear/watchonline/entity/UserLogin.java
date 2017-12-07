@@ -69,13 +69,13 @@ public class UserLogin {
 	public void setShoppingCar(ShoppingCar shoppingCar) {
 		this.shoppingCar = shoppingCar;
 	}
-	public UserLogin(String loginName, String password/* UserInfo userInfo, ShoppingCar shoppingCar*/) {
+	/*public UserLogin(String loginName, String password UserInfo userInfo, ShoppingCar shoppingCar) {
 		super();
 		this.loginName = loginName;
 		this.password = password;
 		//this.userInfo = userInfo;
 		//this.shoppingCar = shoppingCar;
-	}
+	}*/
 
 	
 }

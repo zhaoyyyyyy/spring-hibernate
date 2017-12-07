@@ -14,8 +14,7 @@ import org.hibernate.annotations.GenericGenerator;
 public class Watch {
 	private String watchName;
 	private int price;
-	
-	private OrderDetail orderDetail;
+
 	private WatchType watchType;//一
 	private Color color;//一
 	@Id
@@ -52,14 +51,4 @@ public class Watch {
 	public void setColor(Color color) {
 		this.color = color;
 	}
-	//双向多对一
-	@ManyToOne(targetEntity=OrderDetail.class)   //指定关联对象
-	@JoinColumn(name="id")
-	public OrderDetail getOrderDetail() {
-		return orderDetail;
-	}
-	public void setOrderDetail(OrderDetail orderDetail) {
-		this.orderDetail = orderDetail;
-	}
-	
 }

@@ -70,14 +70,15 @@ public class WatchControllerImpl {
 		watch.setWatchType(wt);
 		//不会写
 		watchServiceImpl.saveWatch(watch);*/
-	public String addWatch(String watchName,int price/*,int type,int color,int id*/) {
-		Watch watch = new Watch();
+	public String addWatch(Watch w) {
+		/*Watch watch = new Watch();
 		watch.setWatchName(watchName);
-		watch.setPrice(price);
+		watch.setPrice(price);*/
 		/*watch.setColor(color);
 		watch.setWatchType(type);
 		watch.setOrderDetail(orderDetail);*/
-		watchServiceImpl.saveWatch(watch);
+		
+		watchServiceImpl.saveWatch(w);
 		return "redirect:/admin/success.jsp";
 	}
 	@RequestMapping("/deleteWatch")

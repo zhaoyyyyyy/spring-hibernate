@@ -22,7 +22,7 @@ public class UserController {
 	public String regist(String loginName,String password1,String password2,String realName,
 			String sex,String age,Model model) {
 		String msg="注册失败！";
-		UserLogin ul= new UserLogin(loginName,password1);
+		UserLogin ul= new UserLogin();
 		UserInfo ui=new UserInfo();
 		if(password1.equals(password2)) {
 			ui.setLoginName(loginName);
@@ -46,7 +46,7 @@ public class UserController {
 		
 		//ul.setUserInfo(ui);
 	}
-	@RequestMapping("Ulogin")
+	@RequestMapping("/Ulogin")
 	public String login(String loginName,String password,HttpServletRequest request) {
 		if(userServiceImpl.findById(loginName,password)) {
 			request.getSession().setAttribute("userLogin", loginName);

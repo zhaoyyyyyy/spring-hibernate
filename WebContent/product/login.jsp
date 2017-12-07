@@ -10,7 +10,7 @@
 <table  width="100%" >
 	<tr>
 		<td align="center">
-		<form action="user/login.do"  method="post">
+		<form action="../Ulogin.do"  method="post">
 		<table>
 			<tr>
 				<td>
