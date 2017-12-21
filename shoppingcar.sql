@@ -1,0 +1,9 @@
+INSERT INTO `shoppingcar` VALUES ('电子表90', 416, 3, 1, 'p-2.png');
+INSERT INTO `shoppingcar` VALUES ('电子表26', 100, 2, 1, 'p-3.png');
+INSERT INTO `shoppingcar` VALUES ('电子表90', 416, 1, 1, 'p-2.png');
+INSERT INTO `shoppingcar` VALUES ('电子表26', 100, 4, 1, 'p-3.png');
+INSERT INTO `shoppingcar` VALUES ('电子表26', 100, 5, 1, 'p-3.png');
+INSERT INTO `shoppingcar` VALUES ('电子表26', 100, 6, 1, 'p-3.png');
+INSERT INTO `shoppingcar` VALUES ('电子表90', 416, 7, 1, 'p-2.png');
+INSERT INTO `shoppingcar` VALUES ('电子表90', 416, 8, 1, 'p-2.png');
+INSERT INTO `shoppingcar` VALUES ('电子表78', 472, 9, 1, 'p-1.png');
